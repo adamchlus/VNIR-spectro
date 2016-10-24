@@ -12,8 +12,10 @@ PWM CCD CODE (FORTHCOMING)
 */
 
 //half pulse length of the clock signal in milliseconds
-//a minumum of 2088 clock pulses are needed per read cycle
-//therefore integration time = 2*half_pulse*2088  us
+//a minimum of 2088 clock pulses are needed per read cycle
+//therefore integration time ~ 2*half_pulse*2088  us
+//integrations time is aproximate and effected by 
+//delayMicroseconds() accuracy and other delays
 int half_pulse =1;
 
 void setup() 
